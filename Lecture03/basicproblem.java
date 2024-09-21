@@ -1,17 +1,28 @@
 package Lecture03;
+import java.util.Scanner;
+public class basicproblem{
+public static void main(String []args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("enter numbers to prime or not");
+    int sc = scanner.nextInt();
 
-public class basicproblem {
+    boolean b=true;
     
-        public static void main(String []args)
-            {
-         int sum =0;
-         int n=5;
-         for (int i=1;i<=n;i++){
-          sum+=i;
-          System.out.println(i+":"+sum);
-           
+for(int i=1;i<n;i++){
+    if (n%i==0){
+        b = false;
+        break;
+    }
 }
-            }
+    if (b==true){
+        System.out.println("prime");
+    }else{
+        System.out.println("not pirme ");
+
+          }     
+      }
+
+    }
+            
 
     
-}
